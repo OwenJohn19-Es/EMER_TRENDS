@@ -1,11 +1,375 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Highschool Page</title>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f2b90d",
+                        "background-light": "#f8f8f5",
+                        "background-dark": "#221e10",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Lexend', sans-serif;
+        }
+    </style>
 </head>
-<body>
-    <h1>HELLO WELCOME TO THE HIGHSCHOOL PAGE</h1>
-</body>
-</html>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 flex h-20 items-center justify-between">
+<div class="flex items-center gap-10">
+<div class="flex items-center gap-3">
+<div class="text-primary">
+<svg class="size-8" fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z"></path>
+</svg>
+</div>
+<h1 class="text-2xl font-bold tracking-tight">Westview High</h1>
+</div>
+<nav class="hidden lg:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Academics</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Athletics</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Clubs</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">News</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Admissions</a>
+</nav>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden xl:flex items-center bg-slate-100 dark:bg-slate-800 rounded-lg px-3 py-2">
+<span class="material-symbols-outlined text-slate-500 text-xl">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm w-48 placeholder:text-slate-500" placeholder="Search school programs..." type="text"/>
+</div>
+<button class="bg-primary text-slate-900 px-6 py-2.5 rounded-lg text-sm font-bold hover:brightness-105 transition-all">
+                        Parent Portal
+                    </button>
+<div class="size-10 rounded-full bg-slate-200 dark:bg-slate-700 overflow-hidden border-2 border-primary/20">
+<img class="w-full h-full object-cover" data-alt="Student profile avatar placeholder" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBd3lDW2YeSoRKvaR3SOhRsyq_QbLKpp7joHREqTrX9DN-EvS7897VAgmFeN0CxdUxguwyN6Yv0uolOr409MrRM2VeISSfFnxBzTQUR2GJpwff_d409M4GPxFIOQEt1oyebf2qKwF6CN8YCkTfPTFeW_PYPZbf8iJvvk3ZJQQ9xqBgVYP2h2tyBvBzQ-fcHfYINjBEElcjgpEGIICbXkAI0bwS-WhAYeOQt9mqXZ5vrTZ0f1oqzIM-4cxIRpY1xhV1ZSbOnO1cpmNg"/>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 py-16 lg:py-24">
+<div class="grid lg:grid-cols-2 gap-12 items-center">
+<div class="order-2 lg:order-1 space-y-8">
+<div class="space-y-4">
+<span class="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider">Est. 1984 — Excellence in Education</span>
+<h2 class="text-5xl lg:text-7xl font-black leading-tight tracking-tight">
+                                Welcome to <br/><span class="text-primary">Westview High</span>
+</h2>
+<p class="text-lg text-slate-600 dark:text-slate-400 max-w-lg leading-relaxed">
+                                Empowering students to achieve excellence through innovation, creativity, and leadership. Join a community dedicated to shaping the leaders of tomorrow.
+                            </p>
+</div>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-slate-900 px-8 py-4 rounded-xl font-bold text-lg hover:shadow-lg transition-all">
+                                Schedule a Tour
+                            </button>
+<button class="bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-slate-100 px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition-all">
+                                Apply Now
+                            </button>
+</div>
+<div class="flex items-center gap-8 pt-4 border-t border-slate-200 dark:border-slate-800">
+<div>
+<p class="text-3xl font-bold">98%</p>
+<p class="text-sm text-slate-500">College Rate</p>
+</div>
+<div>
+<p class="text-3xl font-bold">1:15</p>
+<p class="text-sm text-slate-500">Faculty Ratio</p>
+</div>
+<div>
+<p class="text-3xl font-bold">45+</p>
+<p class="text-sm text-slate-500">Student Clubs</p>
+</div>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<div class="relative">
+<div class="absolute -inset-4 bg-primary/20 rounded-3xl blur-2xl"></div>
+<div class="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3] bg-slate-200 dark:bg-slate-800">
+<img class="w-full h-full object-cover" data-alt="Modern high school campus building exterior with students" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeyQyURDuN7WtPPsymCkehRCcdNFEG8GEbTQaFmkRq1VwXOHVT30yi46nSEIO8ImvUCZ7zR6UkWl3E_9zQHPQ-3B4PEYnstp-DyfYDkIm9vHHzIAY662aa2pGWlt-teMMmOrzH7ZT1ioxCSh38KOHCubh58XhRuJJ_L23sRKBN6DVmDJ3fbD5HAIdUrknwPgI11V3TvghejLI7PMeZk9nnZYlzmwnYk20VGd3SDUmKu6OLj5bWRMpD_C6gvFG8sFpPx4kb4fY51Qo"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Academic Excellence Section -->
+<section class="bg-white dark:bg-slate-900/50 py-24">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-16">
+<div class="max-w-2xl space-y-4">
+<h2 class="text-3xl lg:text-4xl font-bold tracking-tight">Academic Excellence</h2>
+<p class="text-slate-600 dark:text-slate-400 text-lg">
+                                Our rigorous curriculum is designed to prepare students for success in a rapidly changing world through specialized learning tracks.
+                            </p>
+</div>
+<button class="text-primary font-bold flex items-center gap-2 hover:underline">
+                            View all programs <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- STEM Card -->
+<div class="group p-8 rounded-2xl border border-slate-200 dark:border-slate-800 bg-background-light dark:bg-background-dark hover:border-primary/50 transition-all hover:shadow-xl">
+<div class="size-14 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">science</span>
+</div>
+<h3 class="text-xl font-bold mb-3">STEM</h3>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
+                                Cutting-edge technology, advanced mathematics, and state-of-the-art science laboratories for the next generation of innovators.
+                            </p>
+<ul class="space-y-3 text-sm font-medium">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Robotics &amp; AI Lab</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Advanced Calculus</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Biotech Research</li>
+</ul>
+</div>
+<!-- Fine Arts Card -->
+<div class="group p-8 rounded-2xl border border-slate-200 dark:border-slate-800 bg-background-light dark:bg-background-dark hover:border-primary/50 transition-all hover:shadow-xl">
+<div class="size-14 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">palette</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Fine Arts</h3>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
+                                Award-winning music, drama, and visual arts programs that nurture creativity and individual expression in every student.
+                            </p>
+<ul class="space-y-3 text-sm font-medium">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Digital Illustration</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Symphony Orchestra</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Theater Production</li>
+</ul>
+</div>
+<!-- Humanities Card -->
+<div class="group p-8 rounded-2xl border border-slate-200 dark:border-slate-800 bg-background-light dark:bg-background-dark hover:border-primary/50 transition-all hover:shadow-xl">
+<div class="size-14 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">menu_book</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Humanities</h3>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
+                                Comprehensive history, literature, and social studies courses that develop critical thinking and global awareness.
+                            </p>
+<ul class="space-y-3 text-sm font-medium">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Global History</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Creative Writing</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Philosophy Seminar</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Athletics & Clubs Section -->
+<section class="py-24 max-w-7xl mx-auto px-6 lg:px-12">
+<div class="grid lg:grid-cols-2 gap-16">
+<div>
+<h2 class="text-3xl font-bold mb-8">Athletics &amp; Competitive Sports</h2>
+<div class="grid sm:grid-cols-2 gap-4">
+<div class="relative group h-64 rounded-2xl overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Basketball player jumping for a hoop in a gym" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9yRPTKenFOCxJUvlogLMZs4E6rqBnmUH4kU2tApP-mKlbMns0SpkutB-kBi9QmPThmA9BJpBtbu9dufJ2PrYoBqQNBNeT33Z2HZT7_RCo7dcnjSS0JaaQp3-Q1MtwNwCFbiuRehTGgzzqYosenZbvZoMh26phEM_ykVqE9EnVwtDDBjqzmePNguhGdWplrNuHedPh6ErqZysZe6lpHEJ396wNsoG1B7S5jENWbtnOAMy5i6CG6jN7ssoCyNM3KHvx0CtMy8610ow"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
+<h4 class="text-white font-bold text-lg">Basketball</h4>
+<p class="text-slate-300 text-sm">Varsity &amp; Junior Varsity</p>
+</div>
+</div>
+<div class="relative group h-64 rounded-2xl overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Soccer game in progress on a green field" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCq5Q8NL5JqtwPJYcLRUvSfL2f5uh8auxonRKECqZLYPLI0PukN8zg3W73gf0930rVu2p8Kpjlj_uXVXyms3jDD95UP8IbYCav-ms40hYds9GzLZkln5ZF6MKognkRF8Z-t4B6vd9Z4WKxkcMxcL3MbL_w_F3vYTb2PnUbJMwLhUOSLasqz5pDUFhKiCxMZpWLrycbFYdL3BSGOEqWCfrOa1O3GHIr6N0MuEa-LcH781Xe4shkRMYSZGEKo2TFhU6agmbPrBgBhAMU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
+<h4 class="text-white font-bold text-lg">Soccer</h4>
+<p class="text-slate-300 text-sm">State Championship Finalists</p>
+</div>
+</div>
+</div>
+<div class="mt-6 flex items-center justify-between p-6 rounded-2xl bg-primary text-slate-900">
+<div>
+<p class="font-bold">Sports Schedule Spring 2024</p>
+<p class="text-sm opacity-80">Next game: Friday vs. Eastside High</p>
+</div>
+<button class="bg-white/20 hover:bg-white/40 p-2 rounded-full transition-colors">
+<span class="material-symbols-outlined">calendar_today</span>
+</button>
+</div>
+</div>
+<div>
+<h2 class="text-3xl font-bold mb-8">Student Clubs &amp; Activities</h2>
+<div class="space-y-4">
+<div class="flex items-start gap-4 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 hover:bg-white dark:hover:bg-slate-800 transition-colors">
+<div class="size-12 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined">code</span>
+</div>
+<div>
+<h4 class="font-bold text-lg">Computer Science Club</h4>
+<p class="text-slate-500 text-sm mt-1">Meets Tuesdays at 3:30 PM. Focus on competitive programming and web development.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 hover:bg-white dark:hover:bg-slate-800 transition-colors">
+<div class="size-12 rounded-full bg-green-100 text-green-600 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined">public</span>
+</div>
+<div>
+<h4 class="font-bold text-lg">Model United Nations</h4>
+<p class="text-slate-500 text-sm mt-1">International debate and diplomacy competitions. Regional award winners for 5 years.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 hover:bg-white dark:hover:bg-slate-800 transition-colors">
+<div class="size-12 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined">theater_comedy</span>
+</div>
+<div>
+<h4 class="font-bold text-lg">Drama &amp; Improv Guild</h4>
+<p class="text-slate-500 text-sm mt-1">Performing arts, set design, and stage management. Semi-annual full production plays.</p>
+</div>
+</div>
+</div>
+<button class="w-full mt-6 py-4 rounded-2xl border-2 border-dashed border-slate-300 dark:border-slate-700 text-slate-500 font-medium hover:border-primary hover:text-primary transition-colors">
+                            Explore all 45+ student organizations
+                        </button>
+</div>
+</div>
+</section>
+<!-- Campus News Section -->
+<section class="bg-slate-100 dark:bg-slate-800/50 py-24">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="flex items-center justify-between mb-12">
+<h2 class="text-3xl font-bold">Campus News &amp; Events</h2>
+<button class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 px-6 py-2 rounded-lg font-bold">Read All News</button>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<article class="bg-background-light dark:bg-background-dark rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<div class="h-48 bg-slate-200 dark:bg-slate-800">
+<img class="w-full h-full object-cover" data-alt="Group of diverse students working together on a laptop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCziRMj9BzmnO55F_aCG5Xgh1b1XzhBAhsTc63pIBSqixGVeNLf7MpaUIVm8J-I6uARiDUpGOa3NH3OLxkLl3CNm2l0WA58vP7Er52TDNRCZF5697tc6lROtFrCm9dIS8EkkIGRThDqWYiQmDJE0-k65qPTNOvnFuEMVLd1SMpGrRxVl5bFZAViJJndLOL_QkyA-SJgB2Mazt71RcJ3SzSz1_TKALVt1_VB9r3Yvihf4s9fkmSgVhBkxbALG3Oe7Ez34PqmVBurKQw"/>
+</div>
+<div class="p-6 space-y-3">
+<span class="text-xs font-bold text-primary uppercase">Academic News</span>
+<h3 class="text-xl font-bold leading-tight hover:text-primary cursor-pointer">Westview Robotics Team Takes First at Regional Finals</h3>
+<p class="text-slate-500 text-sm line-clamp-2">The 'Westview Warriors' advanced to the international finals after a stunning victory last weekend.</p>
+<div class="pt-4 flex items-center gap-3 text-xs text-slate-400">
+<span class="material-symbols-outlined text-sm">calendar_month</span> Oct 12, 2023
+                                </div>
+</div>
+</article>
+<article class="bg-background-light dark:bg-background-dark rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<div class="h-48 bg-slate-200 dark:bg-slate-800">
+<img class="w-full h-full object-cover" data-alt="Teacher lecturing in a modern classroom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQ0ym7iM44sit6TBEI1ssWiGTBq5oBozFNsnUZv07-nUBTHGtml24QbAfSIQENvgVggszfQlS2yI4qqVtxlym0y_KOfP1L3KGjY4hakPbJV_MrX-4GhX65e7p8XymQno2Hc50qm8SrxHtUfR3vf8Dciwb-_biDRx7r9w5E5I-cNXe1moF4FKMjMJBfqdmkqLmwkc34y1Gjg_wVXx8gM0gstV0BVf3Z-PSNFKVDdfETGOZw-jqyfgjHMFIXg0Pwzxms2YLAj9RgOK4"/>
+</div>
+<div class="p-6 space-y-3">
+<span class="text-xs font-bold text-primary uppercase">Announcements</span>
+<h3 class="text-xl font-bold leading-tight hover:text-primary cursor-pointer">New Multi-Million Dollar Science Wing Groundbreaking</h3>
+<p class="text-slate-500 text-sm line-clamp-2">Construction begins next month on our state-of-the-art laboratory and research facility.</p>
+<div class="pt-4 flex items-center gap-3 text-xs text-slate-400">
+<span class="material-symbols-outlined text-sm">calendar_month</span> Oct 08, 2023
+                                </div>
+</div>
+</article>
+<article class="bg-background-light dark:bg-background-dark rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<div class="h-48 bg-slate-200 dark:bg-slate-800">
+<img class="w-full h-full object-cover" data-alt="Microphone on a stage with concert lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPz420-HZSd7wfFLk86nmJPrtECeG9jLdB_yhV-SOCc_1sqQkvBTGjHZr0lumCcpFlgVVll5AivNfN7qLfmeFfoMf12MJbA7gqQyTeqNRm3dbws4MeC8eWvfdFBaFkQwk8ET5c7nyCQqZ2wmbCcoqkEyMp8IEaPn8v7-UQH5rfqbTIDgJxV4ginzE0NZtiRBCsDQmO9uvWSiqtZakIZ7enfpRxqQWP_bKVbBPU4rWQ14lVgd2XOZGxqBzwdfGMxGmXTSFmUm6Xwyk"/>
+</div>
+<div class="p-6 space-y-3">
+<span class="text-xs font-bold text-primary uppercase">Arts &amp; Culture</span>
+<h3 class="text-xl font-bold leading-tight hover:text-primary cursor-pointer">Tickets Now Available for Fall Musical: 'Into the Woods'</h3>
+<p class="text-slate-500 text-sm line-clamp-2">Don't miss the Westview Drama Guild's spectacular performance starting next Thursday.</p>
+<div class="pt-4 flex items-center gap-3 text-xs text-slate-400">
+<span class="material-symbols-outlined text-sm">calendar_month</span> Oct 05, 2023
+                                </div>
+</div>
+</article>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-900 text-slate-100 py-20">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+<div class="space-y-6">
+<div class="flex items-center gap-3">
+<div class="text-primary">
+<svg class="size-8" fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z"></path>
+</svg>
+</div>
+<h2 class="text-2xl font-bold tracking-tight">Westview High</h2>
+</div>
+<p class="text-slate-400 text-sm leading-relaxed">
+                            A premier educational institution dedicated to fostering intellectual curiosity and community leadership since 1984.
+                        </p>
+<div class="flex gap-4">
+<a class="size-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary hover:text-slate-900 transition-all" href="#">
+<svg class="size-5" fill="currentColor" viewbox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg>
+</a>
+<a class="size-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary hover:text-slate-900 transition-all" href="#">
+<svg class="size-5" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+<a class="size-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary hover:text-slate-900 transition-all" href="#">
+<svg class="size-5" fill="currentColor" viewbox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-6">Explore</h4>
+<ul class="space-y-4 text-slate-400 text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">Campus Tour</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">School Calendar</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Faculty Directory</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Career Center</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Alumni Network</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-6">Contact Us</h4>
+<ul class="space-y-4 text-slate-400 text-sm">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl">location_on</span>
+<span>123 Scholar Way,<br/>Westview, CA 94025</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl">call</span>
+<span>(555) 123-4567</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl">mail</span>
+<span>info@westviewhigh.edu</span>
+</li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-6">Newsletter</h4>
+<p class="text-slate-400 text-sm mb-4">Stay updated with the latest news and campus events.</p>
+<form class="space-y-3">
+<input class="w-full bg-white/5 border-slate-700 rounded-lg px-4 py-3 text-sm focus:ring-primary focus:border-primary" placeholder="Email address" type="email"/>
+<button class="w-full bg-primary text-slate-900 font-bold py-3 rounded-lg hover:brightness-105 transition-all">Subscribe</button>
+</form>
+</div>
+</div>
+<div class="pt-12 border-t border-slate-800 flex flex-col md:flex-row items-center justify-between gap-6 text-slate-500 text-xs">
+<p>© 2023 Westview High School. All rights reserved.</p>
+<div class="flex gap-8">
+<a class="hover:text-primary" href="#">Privacy Policy</a>
+<a class="hover:text-primary" href="#">Terms of Service</a>
+<a class="hover:text-primary" href="#">Accessibility</a>
+<a class="hover:text-primary" href="#">Site Map</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

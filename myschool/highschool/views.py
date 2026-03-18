@@ -5,6 +5,10 @@ from .forms import PostForm
 from .models import Post
 
 
+class HighschoolLandingView(generic.TemplateView):
+    template_name = "index.html"
+
+
 class PostListView(generic.ListView):
     model = Post
     template_name = "highschool/post_list.html"
@@ -24,17 +28,17 @@ class PostCreateView(generic.CreateView):
     model = Post
     form_class = PostForm
     template_name = "highschool/post_form.html"
-    success_url = reverse_lazy("highschool:post-list")
+    success_url = reverse_lazy("highschool:highschoolblog")
 
 
 class PostUpdateView(generic.UpdateView):
     model = Post
     form_class = PostForm
     template_name = "highschool/post_form.html"
-    success_url = reverse_lazy("highschool:post-list")
+    success_url = reverse_lazy("highschool:highschoolblog")
 
 
 class PostDeleteView(generic.DeleteView):
     model = Post
     template_name = "highschool/post_confirm_delete.html"
-    success_url = reverse_lazy("highschool:post-list")
+    success_url = reverse_lazy("highschool:highschoolblog")
